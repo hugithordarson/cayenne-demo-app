@@ -8,15 +8,13 @@
 	<packaging>woapplication</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>Cayenne WebObjects Demo Application</name>
-
 	<properties>
-		<webobjects.version>5.4.3</webobjects.version>
-		<wonder.version>7.3-SNAPSHOT</wonder.version>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<webobjects.version>5.4.3</webobjects.version>
+		<wonder.version>7.3-SNAPSHOT</wonder.version>
 		<cayenne.version>4.2.M3-SNAPSHOT</cayenne.version>
 	</properties>
-
 	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
@@ -48,7 +46,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>wonder.core</groupId>
@@ -66,11 +63,6 @@
 			<version>${webobjects.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.webobjects</groupId>
-			<artifactId>JavaFoundation</artifactId>
-			<version>${webobjects.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>org.apache.cayenne</groupId>
 			<artifactId>cayenne-server</artifactId>
 			<version>${cayenne.version}</version>
@@ -84,6 +76,11 @@
 			<groupId>com.zaxxer</groupId>
 			<artifactId>HikariCP</artifactId>
 			<version>4.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.commonmark</groupId>
+			<artifactId>commonmark</artifactId>
+			<version>0.17.1</version>
 		</dependency>
 	</dependencies>
 </project>
