@@ -1,8 +1,11 @@
 package demo.components;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 import org.commonmark.Extension;
 import org.commonmark.ext.gfm.tables.TablesExtension;
@@ -36,11 +39,14 @@ public class CDMavenPage extends CDComponent {
 	}
 
 	/**
-	 * @return The named resource as a string. StockOverflow calls this "the stupid scanner trick". I love it.
+	 * @return The named resource as a string
 	 */
 	private static String readStringFromResource( final String resourcePath ) {
-		try( Scanner scanner = new Scanner( CDMavenPage.class.getResourceAsStream( resourcePath ), "UTF-8" ).useDelimiter( "\\A" )) {
-			return scanner.next();
+		try {
+			return new String( Files.readAllBytes( Paths.get( CDMavenPage.class.getResource( resourcePath ).toURI() ) ) );
+		}
+		catch( IOException | URISyntaxException e ) {
+			throw new RuntimeException( e );
 		}
 	}
 }
