@@ -30,7 +30,7 @@ public class CDCore {
 	public static ServerRuntime createServerRuntime() {
 		final ServerRuntimeBuilder builder = ServerRuntime.builder();
 
-		builder.addConfig( "cayenne-core/cayenne-project.xml" );
+		builder.addConfig( "cayenne/cayenne-wo-demo.xml" );
 
 		builder.addModule( b -> b.bind( DataSourceFactory.class ).toInstance( new DataSourceFactory() {
 			@Override

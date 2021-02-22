@@ -34,6 +34,18 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.cayenne.plugins</groupId>
+				<artifactId>cayenne-maven-plugin</artifactId>
+				<version>${cayenne.version}</version>
+				<configuration>
+					<map>${project.basedir}/src/main/resources/cayenne/cayenne-wo-demo-map.map.xml</map>
+					<destDir>${project.basedir}/src/main/java</destDir>
+				</configuration>
+				<goals>
+					<goal>cgen</goal>
+				</goals>
+			</plugin>
 		</plugins>
 	</build>
 
