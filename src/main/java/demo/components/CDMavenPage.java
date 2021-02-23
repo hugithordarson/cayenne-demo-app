@@ -44,7 +44,7 @@ public class CDMavenPage extends CDComponent {
 							@Override
 							public void setAttributes( Node node, String tagName, Map<String, String> attributes ) {
 								if( node instanceof TableBlock ) {
-									attributes.put( "class", "table table-striped table-condensed" );
+									attributes.put( "class", "table table-striped table-bordered table-condensed" );
 								}
 							}
 						};
