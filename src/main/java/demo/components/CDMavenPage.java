@@ -43,7 +43,7 @@ public class CDMavenPage extends CDComponent {
 	 */
 	private static String readStringFromResource( final String resourcePath ) {
 		try {
-			return new String( Files.readAllBytes( Paths.get( CDMavenPage.class.getResource( resourcePath ).toURI() ) ) );
+			return new String( Files.readAllBytes( Paths.get( CDMavenPage.class.getResource( resourcePath ).toURI() ) ), "utf-8" );
 		}
 		catch( IOException | URISyntaxException e ) {
 			throw new RuntimeException( e );
