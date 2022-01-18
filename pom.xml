@@ -12,7 +12,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<webobjects.version>5.4.3</webobjects.version>
-		<wonder.version>7.3-SNAPSHOT</wonder.version>
+		<wonder.version>7.3</wonder.version>
 		<cayenne.version>4.2.M3-SNAPSHOT</cayenne.version>
 	</properties>
 	<build>
