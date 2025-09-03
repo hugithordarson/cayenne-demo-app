@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<webobjects.version>5.4.3</webobjects.version>
 		<wonder.version>7.4</wonder.version>
-		<cayenne.version>4.2.M3-SNAPSHOT</cayenne.version>
+		<cayenne.version>4.2.2</cayenne.version>
 	</properties>
 	<build>
 		<finalName>${project.artifactId}</finalName>
@@ -70,7 +70,7 @@
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
-			<version>1.4.200</version>
+			<version>2.3.232</version>
 		</dependency>
 		<dependency>
 			<groupId>com.zaxxer</groupId>
@@ -80,12 +80,12 @@
 		<dependency>
 			<groupId>org.commonmark</groupId>
 			<artifactId>commonmark</artifactId>
-			<version>0.17.1</version>
+			<version>0.25.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.commonmark</groupId>
 			<artifactId>commonmark-ext-gfm-tables</artifactId>
-			<version>0.17.1</version>
+			<version>0.25.1</version>
 		</dependency>
 	</dependencies>
 </project>
